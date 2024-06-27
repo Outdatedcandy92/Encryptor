@@ -1,0 +1,92 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    font-family: "Source Code Pro", monospace;
+}
+section{
+    max-height: 100vh;
+    max-width: 100vw;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #004fea;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+}
+nav * {
+    margin: 0;
+}
+.heading{
+    font-size: 35px;
+}
+.input-container {
+    display: flex;
+    justify-content: left;
+    font-size: 15vh;
+}
+
+#Pass {
+    display: block;
+    width: 40vw;
+    height: 20px;
+    border: 3px solid #000000;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 102, 255, 0.1);
+    resize: none;
+    margin-bottom: 20px;
+}
+#subbtn {
+    display: block;
+    width: 8vw;
+    height: 5vh;
+    border: 3px solid #000000;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 102, 255, 0.1);
+    resize: none;
+    text-align: left;
+    padding: 5px; /* Ensure padding is even or removed if not needed */
+}
+#outputText {
+    display: block;
+    width: 40vw;
+    height: 40vh;
+    border: 3px solid #000000;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 102, 255, 0.1);
+    resize: none;
+}
+#myText {
+    display: block;
+    width: 40vw;
+    height: 40vh;
+    border: 3px solid #000000;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0, 102, 255, 0.1);
+    resize: none;
+}
+.input-container {
+    display: flex;
+    justify-content: center; /* Center children horizontally */
+    align-items: center; /* Center children vertically */
+    flex-direction: column; /* Stack children vertically */
+    margin-top: 10vh;
+}
+
+.textareas-container {
+    display: flex; /* Use Flexbox to layout children side by side */
+    justify-content: center; /* Center the two textareas */
+    width: 100%; /* Take up full width */
+    gap: 5vw; /* Optional: Adds space between flex items */
+}
+
+.textarea-wrap {
+    flex: 1; /* Each child div takes up equal space */
+    margin-bottom: 20px;
+}
