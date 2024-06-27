@@ -32,6 +32,6 @@ def upload_text():
     text_data = request.form['text']
     key = request.form['Pass']
     encrypted_text = Encrypt(text_data, key)
-    return render_template(sometext=encrypted_text)
+    return render_template('index.html',encout=encrypted_text)
 
 app.run(host='0.0.0.0', port=8080)
