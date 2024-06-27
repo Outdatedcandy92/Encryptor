@@ -18,7 +18,7 @@
 
 
 
-        <form action="/" method="post">
+        <form action="/" method="post" id="mainform">
 
             <nav class="othernav">
                 
@@ -31,8 +31,8 @@
                 </div>    
 
                 <div class="nav-right">
-                    <div>Encrypt</div>
-                    <div>Decrypt</div>
+                    <div onclick="changeAction('/', 'Encryptor', 'Encrypt')">Encrypt</div>
+                    <div onclick="changeAction('/decrypt', 'Decryptor', 'Decrypt')">Decrypt</div>
                 </div>
             </nav>
 
@@ -47,11 +47,23 @@
             </div>
             <div class="passarea">
                 <textarea id="Pass" name="Pass" placeholder="Password"></textarea>
-                <div class="passgen"><p>Generate Pass</p></div>
             </div>
             
-            <input id="subbtn" type="submit" value="Submit">
+            <input id="subbtn" type="submit" value="Encrypt">
         </form>
     </div>
+
+    <script>
+    function changeAction(action, headingText, buttonText) {
+        // Change form action
+        document.getElementById('mainform').action = action;
+        
+        // Change heading text
+        document.querySelector('.heading').textContent = headingText;
+
+        // Change submit button value
+        document.getElementById('subbtn').value = buttonText;
+    }
+    </script>
 </body>
 </html>
