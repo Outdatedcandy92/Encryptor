@@ -9,15 +9,34 @@
 </head>
 <body>
     
-    <nav>
+    <nav class="nav1">
         <h1 class="heading">Encryptor</h1>
     </nav>
-    <nav class="othernav">
-        <h1>THE OTHER NAV</h1>
-    </nav>
+
 
     <div class="input-container">
+
+
+
         <form action="/" method="post">
+
+            <nav class="othernav">
+                
+                <div class="nav-left">
+                    <select name="encryptionType" id="encryptionType">
+                        <option value="aes">AES</option>
+                        <option value="des">DES</option>
+                        <option value="3des">3DES</option>
+                    </select>
+                </div>    
+
+                <div class="nav-right">
+                    <div>Encrypt</div>
+                    <div>Decrypt</div>
+                </div>
+            </nav>
+
+
             <div class="textareas-container">
                 <div class="textarea-wrap">
                     <textarea id="myText" name="text" placeholder="Enter your text here"></textarea>
@@ -26,7 +45,11 @@
                     <textarea id="outputText" name="outputText" placeholder="Output will be displayed here" readonly>{{encout}}</textarea>
                 </div>
             </div>
-            <textarea id="Pass" name="Pass" placeholder="Password"></textarea>
+            <div class="passarea">
+                <textarea id="Pass" name="Pass" placeholder="Password"></textarea>
+                <div class="passgen"><p>Generate Pass</p></div>
+            </div>
+            
             <input id="subbtn" type="submit" value="Submit">
         </form>
     </div>
