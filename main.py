@@ -5,6 +5,7 @@ from cryptography.hazmat.primitives import padding
 import base64
 from cryptography.hazmat.primitives.asymmetric import rsa
 from cryptography.hazmat.primitives import serialization
+
 app = Flask(__name__)
 
 def Encrypt_AES(text_data, key):

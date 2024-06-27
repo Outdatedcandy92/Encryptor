@@ -36,14 +36,14 @@ section{
 }
 .passgen{
     border: 3px solid #000000;
-    font-size: 16px; /* Consider if this size works with the new height */
-    height: auto; /* Adjust based on content, or set a minimum height */
-    min-height: 40px; /* Example minimum height */
+    font-size: 16px;
+    height: auto;
+    min-height: 40px;
     width: 40%;
     text-align: center;
-    padding: 5px; /* Add padding to prevent text touching the border */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    overflow: auto; /* Add scrollbars if content overflows */
+    padding: 5px;
+    box-sizing: border-box;
+    overflow: auto;
 }
 #Pass {
     display: block;
@@ -65,7 +65,7 @@ section{
     box-shadow: 0 4px 8px rgba(0, 102, 255, 0.1);
     resize: none;
     text-align: left;
-    padding: 5px; /* Ensure padding is even or removed if not needed */
+    padding: 5px;
 }
 #outputText {
     display: block;
@@ -87,21 +87,21 @@ section{
 }
 .input-container {
     display: flex;
-    justify-content: center; /* Center children horizontally */
-    align-items: center; /* Center children vertically */
-    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin-top: 10vh;
 }
 
 .textareas-container {
-    display: flex; /* Use Flexbox to layout children side by side */
-    justify-content: center; /* Center the two textareas */
-    width: 100%; /* Take up full width */
-    gap: 5vw; /* Optional: Adds space between flex items */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 5vw;
 }
 
 .textarea-wrap {
-    flex: 1; /* Each child div takes up equal space */
+    flex: 1;
     margin-bottom: 20px;
 }
 .othernav {
@@ -109,34 +109,31 @@ section{
     justify-content: space-between;
     align-items: center;
     font-size: 10px;
-    width: 100%; /* Adjusted to take full width of its parent */
+    width: 100%;
     margin-bottom: 2vh;
     height: 6vh;
 }
 
-
-
 .nav-right {
     display: flex;
     height: 100%;
-
 }
 .nav-right > div {
-    display: flex; /* Enables flexbox for each child div */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 10px;
     width: 7vw;
     font-size: 3vh;
-    height: 100%; /* Ensure the div takes full height of its parent */
-    border: 3px solid #000; /* Example: 1px solid black border */
+    height: 100%;
+    border: 3px solid #000;
 }
 .nav-left select{
-    display: flex; /* Enables flexbox for each child div */
-    justify-content: center; /* Centers content horizontally */
-    align-items: center; /* Centers content vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 10vw;
     font-size: 3vh;
-    height: 100%; /* Ensure the div takes full height of its parent */
-    border: 3px solid #000; /* Example: 1px solid black border */
+    height: 100%;
+    border: 3px solid #000;
 }
